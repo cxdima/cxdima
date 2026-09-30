@@ -1,210 +1,139 @@
-<div align="center">
+<p align="center">
+  <img src="assets/hero.svg" width="100%" alt="Dmitry Moiseenko — Production systems. Entirely owned."/>
+</p>
 
-<img
-  width="100%"
-  src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0f14,50:0f1b2d,100:12263a&height=230&section=header&text=DMITRY%20MOISEENKO&fontSize=42&fontColor=F2F5F7&fontAlignY=38&desc=FULL-STACK%20%2F%2F%20CLOUD%20INFRASTRUCTURE%20%2F%2F%20APPLICATION%20SECURITY&descAlignY=59&descSize=15&descColor=8FB3C9"
-  alt="Dmitry Moiseenko"
-/>
-
-<a href="https://readme-typing-svg.demolab.com">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=500&size=14&duration=2600&pause=900&color=8FB3C9&center=true&vCenter=true&repeat=true&width=800&height=45&lines=%5BSHIP%5D+Production+platforms+on+AWS%2C+end+to+end;%5BSECURE%5D+Threat+models%2C+encryption%2C+CI+gates+that+fail+the+build;%5BOWN%5D+From+client+requirements+to+alarms+and+restore+drills"
-    alt="Engineering focus"
-  />
-</a>
+<p align="center">
+  <a href="https://www.linkedin.com/in/moiseenko-dmitry/"><img src="assets/btn-linkedin.svg" alt="LinkedIn"/></a>&nbsp;
+  <a href="mailto:moiseenko.dmitry@outlook.com"><img src="assets/btn-email.svg" alt="Email"/></a>&nbsp;
+  <a href="https://legacyvord.com"><img src="assets/btn-vord.svg" alt="Vörd"/></a>&nbsp;
+  <a href="https://www.sixplanets.com"><img src="assets/btn-sixplanets.svg" alt="sixplanets"/></a>&nbsp;
+  <a href="https://www.credly.com/badges/d7e15ba3-ab8c-4a73-96e6-a1a65662bb94"><img src="assets/btn-aws.svg" alt="AWS Certified Developer – Associate"/></a>
+</p>
 
 <br/>
 
-<a href="https://www.linkedin.com/in/moiseenko-dmitry/">
-  <img src="https://img.shields.io/badge/LINKEDIN-0B1116?style=for-the-badge&logo=linkedin&logoColor=9FC2D6" alt="LinkedIn"/>
-</a>
-<a href="mailto:moiseenko.dmitry@outlook.com">
-  <img src="https://img.shields.io/badge/EMAIL-0B1116?style=for-the-badge&logo=maildotru&logoColor=9FC2D6" alt="Email"/>
-</a>
-<a href="https://legacyvord.com">
-  <img src="https://img.shields.io/badge/V%C3%96RD-0B1116?style=for-the-badge&logo=googlechrome&logoColor=9FC2D6" alt="Vörd"/>
-</a>
-<a href="https://www.credly.com/badges/d7e15ba3-ab8c-4a73-96e6-a1a65662bb94">
-  <img src="https://img.shields.io/badge/AWS_CERTIFIED_DEVELOPER-0B1116?style=for-the-badge&logo=amazonwebservices&logoColor=9FC2D6" alt="AWS Certified Developer – Associate"/>
-</a>
+<img src="assets/section-focus.svg" width="100%" alt="01 — What I do"/>
 
-<br/><br/>
+I build web platforms for real businesses and then keep them running. That means the Angular front end, the Python API behind it, the Terraform that stands it up, the tests and CI gates that guard it, and the alarms and runbooks for when something breaks at 2 a.m. Two of those platforms are in production today; on both I was the engineer of record from the first requirements call to the first incident.
 
-<img src="https://img.shields.io/badge/STATUS-SHIPPING_TO_PRODUCTION-14202E?style=flat-square&labelColor=080C0F&color=14202E" alt="Status"/>
-<img src="https://img.shields.io/badge/FOCUS-CLOUD_%2B_SECURITY-14202E?style=flat-square&labelColor=080C0F&color=14202E" alt="Focus"/>
-<img src="https://img.shields.io/badge/LOCATION-DALLAS_TX-14202E?style=flat-square&labelColor=080C0F&color=14202E" alt="Location"/>
-<img src="https://img.shields.io/badge/UTD-B.S._SOFTWARE_ENGINEERING_'27-14202E?style=flat-square&labelColor=080C0F&color=14202E" alt="UT Dallas"/>
-<img src="https://komarev.com/ghpvc/?username=cxdima&style=flat-square&color=14202E&label=PROFILE+VIEWS" alt="Profile views"/>
+- **Serverless on AWS** — API Gateway + Lambda, DynamoDB single-table design, Step Functions, Cognito, KMS, CloudFront, SES; all of it in Terraform/OpenTofu with CI that authenticates via OIDC and rolls back by Lambda alias
+- **Security as a design input** — STRIDE and MITRE ATLAS threat models, KMS envelope encryption, zero-knowledge key handling, MFA and passkeys, tenant isolation, and scanners (bandit, checkov, gitleaks, pip-audit) that fail the build instead of warning
+- **Client-facing delivery** — written scopes before building, iterative releases with demos, dated release notes, and audit reports a non-technical owner can act on
 
-</div>
+<br/>
 
----
+<img src="assets/section-systems.svg" width="100%" alt="02 — Systems I own"/>
 
-## Focus
-- Serverless platforms on AWS: Python + API Gateway/Lambda, DynamoDB single-table design, Terraform/OpenTofu, CI/CD with OIDC and rollback
-- Application security: STRIDE and MITRE ATLAS threat modeling, KMS envelope encryption, MFA/passkeys, tenant isolation, blocking security gates in CI
-- Client-facing delivery: sole engineer for real businesses, from written requirements to production ownership
+<img src="assets/project-vord.svg" width="100%" alt="Vörd — Co-founder & CTO"/>
 
----
+- Vaults are encrypted in the browser; the release key is **Shamir-split 2-of-3** across trusted contacts, so no server key can open a vault
+- **81-route REST API** on a framework-free Python Lambda: JWT sessions, passkeys/WebAuthn, TOTP 2FA, rate limiting, Stripe webhooks with signature verification, 214 tests that run without AWS
+- CI/CD on every push: tests → `tofu apply` → deploy → smoke test; alias-based rollback, CloudWatch alarms, cross-region replication with scripted restore drills; UI in six languages with i18n parity tests
 
-## Flagship Systems
+<img src="assets/project-corepractice.svg" width="100%" alt="CorePractice — sole engineer, contractor"/>
 
-### Vörd — [legacyvord.com](https://legacyvord.com)
-Zero-knowledge digital-inheritance platform. Co-founder & CTO.
-- Vaults are encrypted in the browser; the release key is Shamir-split 2-of-3 across trusted contacts, so no server key can open a vault
-- 81-route REST API on a framework-free Python Lambda: JWT sessions, passkeys/WebAuthn, TOTP 2FA, rate limiting, Stripe webhooks with signature verification
-- CI/CD via GitHub Actions + OIDC: tests → `tofu apply` → deploy → smoke test; Lambda alias rollback, CloudWatch alarms, cross-region replication with restore drills
+- Multi-tenant platform that reconciles insurer payments against bank deposits for dental practices; live in the client's AWS account (ca-central-1) nine weeks after the contract was signed
+- **87-endpoint REST API** (Pydantic validation, cursor pagination, conditional writes with a concurrency test suite) plus Step Functions-orchestrated Playwright connectors for bank and insurer portals
+- PIPEDA/HIPAA-scope posture: Cognito with mandatory TOTP MFA, KMS envelope-encrypted credential vault, CloudTrail, STRIDE threat model, privacy impact assessment, incident-response runbook; **800+ Pytest tests** at 80%+ coverage, all security scanners blocking
 
-### CorePractice — Core Practice Solutions Inc. *(private)*
-Multi-tenant back-office automation for dental practices, built as sole engineer and independent contractor. Live in the client's AWS account (ca-central-1).
-- 87-endpoint REST API (API Gateway + Python Lambda, Pydantic, cursor pagination, conditional writes) and Step Functions-orchestrated Playwright connectors for bank and insurer portals
-- Security posture for PIPEDA/HIPAA-scope data: Cognito with mandatory TOTP MFA, KMS envelope-encrypted credential vault, CloudTrail, STRIDE threat model, PIA, incident-response runbook
-- 800+ Pytest tests at 80%+ coverage; bandit, pip-audit, checkov, gitleaks, and SHA-pinned actions all fail the build
+<img src="assets/project-clawguardian.svg" width="100%" alt="ClawGuardian — Hook 'Em Hacks, two track wins"/>
 
-### ClawGuardian — [Devpost](https://devpost.com/software/clawguardian)
-Prompt-injection firewall for AI agents with on-chain threat sharing. **Hook 'Em Hacks 2026: Security in an AI-First World + Best Use of AWS.**
-- Led AWS architecture and frontend: private VPC with PrivateLink, Cognito TOTP MFA, KMS signing, Fargate, zero wildcard IAM, Bedrock with no internet egress
-- Threat model maps 25+ AI-agent threats to MITRE ATLAS across five trust boundaries
+- Led AWS architecture and frontend: private VPC with PrivateLink endpoints, Cognito TOTP MFA, KMS signing and envelope encryption, Fargate, zero wildcard IAM, Bedrock with no internet egress
+- Threat model maps **25+ AI-agent threats to MITRE ATLAS** across five trust boundaries; on-chain threat sharing between deployments — [Devpost](https://devpost.com/software/clawguardian)
 
-### Project Tusk — [Devpost](https://devpost.com/software/echofield) · [GitHub](https://github.com/ch1kim0n1/hacksmu26)
-Bioacoustic research platform for ElephantVoices. **HackSMU VII 2026: 1st place, Infrastructure Masons track.**
-- Led frontend and data visualization: interactive 3D globe and waveform views (React, Next.js, Three.js, wavesurfer.js)
+<img src="assets/project-tusk.svg" width="100%" alt="Project Tusk — HackSMU VII, 1st place"/>
 
-### sixplanets — [sixplanets.com](https://www.sixplanets.com)
-Custom-printing e-commerce business I founded. Angular storefront on a serverless product/checkout API with Stripe payments; 7 AWS services at ~60% lower cost than traditional hosting.
+- Turns raw elephant field recordings into research-ready data for ElephantVoices; I led frontend and data visualization — an interactive 3D globe and waveform views in React, Next.js, Three.js, and wavesurfer.js — [Devpost](https://devpost.com/software/echofield) · [GitHub](https://github.com/ch1kim0n1/hacksmu26)
 
----
+<img src="assets/project-sixplanets.svg" width="100%" alt="sixplanets — Founder"/>
 
-## GitHub
+- The business behind this page's design system. Angular storefront on a serverless product/checkout API with Stripe payments; seven AWS services at roughly 60% lower cost than the managed hosting it replaced
+
+<br/>
+
+<img src="assets/section-stack.svg" width="100%" alt="03 — Stack"/>
+
+<table>
+<tr>
+<td align="right" width="90"><b>Build</b></td>
+<td>
+<img src="https://img.shields.io/badge/Python-1d4ed8?style=flat-square&logo=python&logoColor=fefdfb" alt="Python"/>
+<img src="https://img.shields.io/badge/TypeScript-1d4ed8?style=flat-square&logo=typescript&logoColor=fefdfb" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Angular-1d4ed8?style=flat-square&logo=angular&logoColor=fefdfb" alt="Angular"/>
+<img src="https://img.shields.io/badge/React-f3f0e9?style=flat-square&logo=react&logoColor=1d4ed8" alt="React"/>
+<img src="https://img.shields.io/badge/Next.js-f3f0e9?style=flat-square&logo=nextdotjs&logoColor=111827" alt="Next.js"/>
+<img src="https://img.shields.io/badge/Tailwind-f3f0e9?style=flat-square&logo=tailwindcss&logoColor=1d4ed8" alt="Tailwind"/>
+<img src="https://img.shields.io/badge/Java-f3f0e9?style=flat-square&logo=openjdk&logoColor=111827" alt="Java"/>
+<img src="https://img.shields.io/badge/C++-f3f0e9?style=flat-square&logo=cplusplus&logoColor=1d4ed8" alt="C++"/>
+<img src="https://img.shields.io/badge/SQL-f3f0e9?style=flat-square&logo=postgresql&logoColor=111827" alt="SQL"/>
+<img src="https://img.shields.io/badge/Bash-f3f0e9?style=flat-square&logo=gnubash&logoColor=111827" alt="Bash"/>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Run</b></td>
+<td>
+<img src="https://img.shields.io/badge/AWS-1d4ed8?style=flat-square&logo=amazonwebservices&logoColor=fefdfb" alt="AWS"/>
+<img src="https://img.shields.io/badge/Lambda-1d4ed8?style=flat-square&logo=awslambda&logoColor=fefdfb" alt="Lambda"/>
+<img src="https://img.shields.io/badge/API_Gateway-1d4ed8?style=flat-square&logo=amazonapigateway&logoColor=fefdfb" alt="API Gateway"/>
+<img src="https://img.shields.io/badge/DynamoDB-1d4ed8?style=flat-square&logo=amazondynamodb&logoColor=fefdfb" alt="DynamoDB"/>
+<img src="https://img.shields.io/badge/Terraform_%2F_OpenTofu-1d4ed8?style=flat-square&logo=opentofu&logoColor=fefdfb" alt="Terraform / OpenTofu"/>
+<img src="https://img.shields.io/badge/Step_Functions-f3f0e9?style=flat-square&logoColor=111827" alt="Step Functions"/>
+<img src="https://img.shields.io/badge/Cognito-f3f0e9?style=flat-square&logoColor=111827" alt="Cognito"/>
+<img src="https://img.shields.io/badge/S3_%2B_CloudFront-f3f0e9?style=flat-square&logoColor=111827" alt="S3 + CloudFront"/>
+<img src="https://img.shields.io/badge/Route_53-f3f0e9?style=flat-square&logoColor=111827" alt="Route 53"/>
+<img src="https://img.shields.io/badge/SES-f3f0e9?style=flat-square&logoColor=111827" alt="SES"/>
+<img src="https://img.shields.io/badge/Docker-f3f0e9?style=flat-square&logo=docker&logoColor=1d4ed8" alt="Docker"/>
+<img src="https://img.shields.io/badge/GitHub_Actions_(OIDC)-f3f0e9?style=flat-square&logo=githubactions&logoColor=1d4ed8" alt="GitHub Actions"/>
+<img src="https://img.shields.io/badge/GCP-f3f0e9?style=flat-square&logo=googlecloud&logoColor=1d4ed8" alt="GCP"/>
+<img src="https://img.shields.io/badge/Linux-f3f0e9?style=flat-square&logo=linux&logoColor=111827" alt="Linux"/>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Secure</b></td>
+<td>
+<img src="https://img.shields.io/badge/STRIDE-1d4ed8?style=flat-square&logoColor=fefdfb" alt="STRIDE"/>
+<img src="https://img.shields.io/badge/MITRE_ATLAS-1d4ed8?style=flat-square&logoColor=fefdfb" alt="MITRE ATLAS"/>
+<img src="https://img.shields.io/badge/KMS_envelope_encryption-1d4ed8?style=flat-square&logoColor=fefdfb" alt="KMS envelope encryption"/>
+<img src="https://img.shields.io/badge/Zero--knowledge_design-1d4ed8?style=flat-square&logoColor=fefdfb" alt="Zero-knowledge design"/>
+<img src="https://img.shields.io/badge/OWASP_LLM_Top_10-f3f0e9?style=flat-square&logo=owasp&logoColor=111827" alt="OWASP LLM Top 10"/>
+<img src="https://img.shields.io/badge/Prompt--injection_defense-f3f0e9?style=flat-square&logoColor=111827" alt="Prompt-injection defense"/>
+<img src="https://img.shields.io/badge/MFA_%C2%B7_TOTP_%C2%B7_Passkeys-f3f0e9?style=flat-square&logoColor=111827" alt="MFA · TOTP · Passkeys"/>
+<img src="https://img.shields.io/badge/Least--privilege_IAM-f3f0e9?style=flat-square&logoColor=111827" alt="Least-privilege IAM"/>
+<img src="https://img.shields.io/badge/Tenant_isolation-f3f0e9?style=flat-square&logoColor=111827" alt="Tenant isolation"/>
+<img src="https://img.shields.io/badge/Incident_response-f3f0e9?style=flat-square&logoColor=111827" alt="Incident response"/>
+<img src="https://img.shields.io/badge/bandit-f3f0e9?style=flat-square&logoColor=111827" alt="bandit"/>
+<img src="https://img.shields.io/badge/checkov-f3f0e9?style=flat-square&logoColor=111827" alt="checkov"/>
+<img src="https://img.shields.io/badge/gitleaks-f3f0e9?style=flat-square&logoColor=111827" alt="gitleaks"/>
+<img src="https://img.shields.io/badge/pip--audit-f3f0e9?style=flat-square&logoColor=111827" alt="pip-audit"/>
+<img src="https://img.shields.io/badge/Dependabot-f3f0e9?style=flat-square&logo=dependabot&logoColor=1d4ed8" alt="Dependabot"/>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Verify</b></td>
+<td>
+<img src="https://img.shields.io/badge/Pytest-1d4ed8?style=flat-square&logo=pytest&logoColor=fefdfb" alt="Pytest"/>
+<img src="https://img.shields.io/badge/Playwright-1d4ed8?style=flat-square&logo=playwright&logoColor=fefdfb" alt="Playwright"/>
+<img src="https://img.shields.io/badge/Jest-f3f0e9?style=flat-square&logo=jest&logoColor=111827" alt="Jest"/>
+<img src="https://img.shields.io/badge/Selenium-f3f0e9?style=flat-square&logo=selenium&logoColor=111827" alt="Selenium"/>
+<img src="https://img.shields.io/badge/Cypress-f3f0e9?style=flat-square&logo=cypress&logoColor=111827" alt="Cypress"/>
+<img src="https://img.shields.io/badge/Postman-f3f0e9?style=flat-square&logo=postman&logoColor=111827" alt="Postman"/>
+<img src="https://img.shields.io/badge/Property--based_%26_concurrency_tests-f3f0e9?style=flat-square&logoColor=111827" alt="Property-based and concurrency tests"/>
+<img src="https://img.shields.io/badge/mypy_%2B_ruff-f3f0e9?style=flat-square&logoColor=111827" alt="mypy + ruff"/>
+<img src="https://img.shields.io/badge/axe_accessibility-f3f0e9?style=flat-square&logoColor=111827" alt="axe accessibility"/>
+</td>
+</tr>
+</table>
+
+<br/>
+
+<img src="assets/section-now.svg" width="100%" alt="04 — Right now"/>
+
+- Finishing a B.S. in Software Engineering at UT Dallas (May 2027)
+- Operating CorePractice in production for a Canadian client and shipping Vörd with a co-founder
+- Open to Summer 2027 internships and new-grad roles in cloud, security, or full-stack engineering — Dallas or remote
+
+<br/>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cxdima&show_icons=true&theme=nord&hide_border=true&bg_color=0b0f14&title_color=8FB3C9&icon_color=8FB3C9&text_color=c9d1d9" alt="GitHub stats" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cxdima&layout=compact&theme=nord&hide_border=true&bg_color=0b0f14&title_color=8FB3C9&text_color=c9d1d9" alt="Top languages" height="165"/>
+  <img src="assets/footer.svg" width="100%" alt="Dutch · English · Russian · Ukrainian"/>
 </p>
-
----
-
-## Skills
-
-### Languages
-
-<p>
-  <img src="https://skillicons.dev/icons?i=python,ts,js,java,cpp,bash,html,css&perline=16" alt="Languages"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/HCL_(Terraform)-623CE4?style=for-the-badge" />
-</p>
-
-### Frontend
-
-<p>
-  <img src="https://skillicons.dev/icons?i=angular,react,nextjs,tailwind,threejs,vite&perline=14" alt="Frontend"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/Nx_Monorepo-143055?style=for-the-badge&logo=nx&logoColor=white" />
-  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black" />
-  <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white" />
-  <img src="https://img.shields.io/badge/i18n_(6_locales)-455A64?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Accessibility_(axe)-1565C0?style=for-the-badge" />
-</p>
-
-### Backend / APIs
-
-<p>
-  <img src="https://skillicons.dev/icons?i=python,dynamodb,postman&perline=14" alt="Backend"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/REST_API_Design-005571?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/API_Gateway-FF4F8B?style=for-the-badge&logo=amazonapigateway&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white" />
-  <img src="https://img.shields.io/badge/Lambda_Powertools-232F3E?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" />
-  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
-  <img src="https://img.shields.io/badge/Webhooks_(Stripe%2C_Telegram)-635BFF?style=for-the-badge&logo=stripe&logoColor=white" />
-  <img src="https://img.shields.io/badge/Step_Functions-E7157B?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Single--Table_DynamoDB-4053D6?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Rate_Limiting-B00020?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Multi--Tenant_Architecture-00695C?style=for-the-badge" />
-</p>
-
-### Cloud / DevOps / Infrastructure
-
-<p>
-  <img src="https://skillicons.dev/icons?i=aws,gcp,terraform,docker,githubactions,linux,cloudflare&perline=14" alt="Cloud"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/OpenTofu-FFDA18?style=for-the-badge&logo=opentofu&logoColor=black" />
-  <img src="https://img.shields.io/badge/Infrastructure_as_Code-623CE4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/OIDC_CI%2FCD_(no_stored_keys)-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/CloudFront_%2B_S3-8C4FFF?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Route_53_%2F_DNS-8C4FFF?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cognito-DD344C?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SES_(DKIM%2FDMARC)-DD344C?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/CloudWatch_Alarms-FF4F8B?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cross--Region_Replication-0288D1?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Restore_Drills-2E7D32?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Alias--Based_Rollback-455A64?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/VPC_%2F_PrivateLink-37474F?style=for-the-badge" />
-</p>
-
-### Security Engineering
-
-<p>
-  <img src="https://img.shields.io/badge/STRIDE_Threat_Modeling-B71C1C?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MITRE_ATLAS-C62828?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/OWASP_LLM_Top_10-D32F2F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Prompt_Injection_Defense-880E4F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/KMS_Envelope_Encryption-283593?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Zero--Knowledge_Design-1A237E?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Shamir_Secret_Sharing-3949AB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MFA_(TOTP%2C_Passkeys%2FWebAuthn)-1565C0?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Least--Privilege_IAM-37474F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Tenant_Isolation-00695C?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Secrets_Management-5D4037?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Incident_Response-AD1457?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/PIPEDA_%2F_HIPAA_Controls-4E342E?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Supply_Chain_(SHA--pinned_actions)-263238?style=for-the-badge" />
-</p>
-
-### Testing / Quality / DevSecOps
-
-<p>
-  <img src="https://skillicons.dev/icons?i=jest,selenium,cypress,githubactions&perline=14" alt="Testing"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" />
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" />
-  <img src="https://img.shields.io/badge/Property--Based_Tests-6A1B9A?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Concurrency_Tests-4527A0?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Coverage_Gates_(80%25%2B)-2E7D32?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/bandit-1565C0?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/pip--audit-0277BD?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/checkov-7D3C98?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/gitleaks-B00020?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white" />
-  <img src="https://img.shields.io/badge/mypy_%2B_ruff-000000?style=for-the-badge" />
-</p>
-
-### Tooling
-
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,pycharm&perline=14" alt="Tooling"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenAI_Codex-000000?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google_Analytics_4-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white" />
-</p>
-
----
-
-<div align="center">
-  <sub>Dutch · English · Russian · Ukrainian</sub>
-</div>
