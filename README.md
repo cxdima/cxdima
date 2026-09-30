@@ -39,7 +39,7 @@ I build web platforms for real businesses and keep them running: the Angular fro
 
 ### Vörd &nbsp;·&nbsp; Co-founder & CTO
 
-<img src="assets/project-vord.svg" width="100%" alt="Co-founder & CTO · Zero-knowledge digital inheritance · legacyvord.com · May 2026 – present"/>
+<img src="assets/strip-vord.svg" width="100%" alt="Co-founder & CTO · Zero-knowledge digital inheritance · legacyvord.com · May 2026 – present"/>
 
 - Vaults are encrypted in the browser; the release key is **Shamir-split 2-of-3** across trusted contacts, so no server key can open a vault.
 - **81-route REST API** on a framework-free Python Lambda: JWT sessions, passkeys/WebAuthn, TOTP 2FA, rate limiting, Stripe webhooks with signature verification.
@@ -50,7 +50,7 @@ I build web platforms for real businesses and keep them running: the Angular fro
 
 ### CorePractice &nbsp;·&nbsp; Software Engineer, Independent Contractor
 
-<img src="assets/project-corepractice.svg" width="100%" alt="Sole engineer, contractor · Back-office automation for dental practices · Core Practice Solutions Inc. · Jun 2026 – present"/>
+<img src="assets/strip-corepractice.svg" width="100%" alt="Sole engineer, contractor · Back-office automation for dental practices · Core Practice Solutions Inc. · Jun 2026 – present"/>
 
 - Multi-tenant platform that reconciles insurer payments against bank deposits for dental practices. Live in the client's AWS account (ca-central-1) **nine weeks** after the contract was signed.
 - **87-endpoint REST API**: Pydantic validation, cursor pagination, DynamoDB conditional writes with a concurrency test suite; Step Functions-orchestrated Playwright connectors for bank and insurer portals.
@@ -62,7 +62,7 @@ I build web platforms for real businesses and keep them running: the Angular fro
 
 ### ClawGuardian &nbsp;·&nbsp; Hook 'Em Hacks 2026 — Security in an AI-First World + Best Use of AWS
 
-<img src="assets/project-clawguardian.svg" width="100%" alt="Hackathon, 2 track wins · Prompt-injection firewall for AI agents · Hook 'Em Hacks · Apr 2026"/>
+<img src="assets/strip-clawguardian.svg" width="100%" alt="Hackathon, 2 track wins · Prompt-injection firewall for AI agents · Hook 'Em Hacks · Apr 2026"/>
 
 - Prompt-injection firewall for AI agents with on-chain threat sharing. Led AWS architecture and frontend on a four-person team.
 - Private VPC with PrivateLink endpoints, Cognito TOTP MFA, KMS signing and envelope encryption, Fargate, zero wildcard IAM, Bedrock with no internet egress.
@@ -72,7 +72,7 @@ I build web platforms for real businesses and keep them running: the Angular fro
 
 ### Project Tusk &nbsp;·&nbsp; HackSMU VII 2026 — 1st place, Infrastructure Masons track
 
-<img src="assets/project-tusk.svg" width="100%" alt="Hackathon, 1st place · Bioacoustic research platform · HackSMU VII, Infrastructure Masons track · Apr 2026"/>
+<img src="assets/strip-tusk.svg" width="100%" alt="Hackathon, 1st place · Bioacoustic research platform · HackSMU VII, Infrastructure Masons track · Apr 2026"/>
 
 - Turns raw elephant field recordings into research-ready data for ElephantVoices.
 - Led frontend and data visualization: an interactive 3D globe and waveform views in React, Next.js, TypeScript, Three.js, and wavesurfer.js. &nbsp;[Devpost ↗](https://devpost.com/software/echofield) &nbsp;·&nbsp; [GitHub ↗](https://github.com/ch1kim0n1/hacksmu26)
@@ -81,7 +81,7 @@ I build web platforms for real businesses and keep them running: the Angular fro
 
 ### sixplanets &nbsp;·&nbsp; Founder
 
-<img src="assets/project-sixplanets.svg" width="100%" alt="Founder · Custom print studio, Frisco TX · sixplanets.com · Jan 2025 – present"/>
+<img src="assets/strip-sixplanets.svg" width="100%" alt="Founder · Custom print studio, Frisco TX · sixplanets.com · Jan 2025 – present"/>
 
 - Custom-printing business I founded, and the design system this page borrows from.
 - Angular storefront on a serverless product/checkout API (Lambda, DynamoDB, Cognito) with Stripe payments; seven AWS services at roughly 60% lower cost than the managed hosting it replaced.
